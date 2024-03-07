@@ -19,11 +19,9 @@ When done writing the functions, invoke the functions multiple times and use the
 
 function isInvalidNum(num) {
   return typeof (num) !== 'number' || Number.isNaN(num);
-  // return !num || isNaN(num);
 }
 
 function getErrorMsgForNum(num) {
-  // return `Error: ${num} is not a number!`;
   let errorSrc = typeof (num);
   if (errorSrc === "number") errorSrc = num;
   return `Error: ${errorSrc} is not a number!`;
