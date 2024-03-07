@@ -153,9 +153,9 @@ function runTests() {
     console.log(`${a} - ${b} = ${result}`);
 
   a = result;
-  result = getDifference(a, b);
+  result = inverseNumber(a);
   if (!errorLog(result))
-    console.log(`${a} inversed is ${inverseNumber(a)}`);
+    console.log(`${a} inversed is ${result}`);
 
   a = result;
   result = convertPercentageToDecimal(a);
